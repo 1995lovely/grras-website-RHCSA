@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Directory Configuration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Directory Configuration</h1>
+        <p>Set up a collaborative directory with the following requirements:</p>
+        <ul>
+            <li>Group ownership of <strong>/common/admin</strong> is to be set to <strong>sysadmin</strong>.</li>
+            <li>The directory should be readable, writable, and accessible only to members of <strong>sysadmin</strong>. No other user should have access.</li>
+            <li>Files created in <strong>/common/admin</strong> should automatically have group ownership set to the <strong>sysadmin</strong> group.</li>
+        </ul>
+        <p>Note: It is understood that root has access to all files and directories on the system.</p>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Directory Configuration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Configure AutoFS</h1>
+        <p></p>
+        <ul>
+            
+<li>
+	<p>A remoteuser5 home directory is exported via NFS, which is available on
+node1.domain5.example.com (172.25.254.254) and your NFS-exports directory is
+/rhome for remoteuser5.</p>
+	<p>remoteuser5’s home directory is located at node1.domain5.example.com:/rhome/remoteuser5
+	remoteuser5's home directory should be automounted through autofs service.</p>
+	<p>Home directories must be writable by their users.</p>
+	<p>The only home directory that is accessible from your system is remoteuser5</p> 
+</li>
+            
+        </ul>
+        
+    </div>
+</body>
+</html>
+

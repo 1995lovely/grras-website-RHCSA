@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Hat Test Exam</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f7e6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            background-color: #fff;
+            padding: 10px;
+            border-bottom: 2px solid #ccc;
+        }
+
+        .header img {
+            height: 50px;
+            margin-right: 20px;
+        }
+
+        .header h1 {
+            font-size: 20px;
+            color: #333;
+        }
+
+        .content {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .content h2 {
+            color: #333;
+        }
+
+        .important-info {
+            background-color: #fff5cc;
+            padding: 10px;
+            border: 1px solid #f0e68c;
+            margin-bottom: 20px;
+        }
+
+        .task-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .task-list li {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .task-list a {
+            text-decoration: none;
+            color: #007bff;
+            margin-right: 10px;
+        }
+
+        .task-list a:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .timer {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            background-color: #fff5cc;
+            padding: 10px;
+            border: 1px solid #f0e68c;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            z-index: 1000;
+        }
+
+        .button-group {
+            margin-left: auto;
+        }
+
+        input[type="radio"] {
+            margin-left: 10px;
+        }
+    </style>
+    <script>
+        window.onload = function () {
+            let timerElement = document.querySelector('.timer');
+            let timeRemaining = 10800; // 3 hours in seconds
+
+            function updateTimer() {
+                let hours = Math.floor(timeRemaining / 3600);
+                let minutes = Math.floor((timeRemaining % 3600) / 60);
+                let seconds = timeRemaining % 60;
+                timerElement.textContent = `Time remaining: ${hours}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+
+                if (timeRemaining > 0) {
+                    timeRemaining--;
+                } else {
+                    clearInterval(timerInterval);
+                    alert("Time is up!");
+                }
+            }
+
+            let timerInterval = setInterval(updateTimer, 1000);
+            updateTimer();
+        };
+    </script>
+</head>
+<body>
+    <div class="header">
+        <img src="red-hat-logo.png" alt="Red Hat Logo">
+        <h1>Red Hat Test Exam</h1>
+    </div>
+
+    <div class="timer">Time remaining: 3:00:00</div>
+
+    <div class="content">
+        <h2>RHCSA Exam</h2>
+        <p>Please review the <strong>Important Configuration Information</strong> section below for information on your exam environment.</p>
+
+        <div class="button-group">
+            <p><strong>Important Configuration Information</strong></p>
+            <p>Before you begin, you should review some general configuration information outlined in the following link:</p>
+            <a href="important.html">Important configuration information</a>
+             
+                    <label><input type="radio" name="task1" value="revisit"> Revisit</label>
+                    <label><input type="radio" name="task1" value="done"> Done</label>
+               
+	</div>
+
+        <h3>Perform the following first 18 question on Node1 and last 6 question on Node2 <strong>(Nod1 and Node2)</strong>.</h3>
+
+        <ul class="task-list">
+            <li>
+                <a href="task1.html">Configure your system 01</a>
+                <div class="button-group">
+                    <label><input type="radio" name="task1" value="revisit"> Revisit</label>
+                    <label><input type="radio" name="task1" value="done"> Done</label>
+                </div>
+            </li>
+            <li>
+                <a href="task2.html">Configure your system 02</a>
+                <div class="button-group">
+                    <label><input type="radio" name="task2" value="revisit"> Revisit</label>
+                    <label><input type="radio" name="task2" value="done"> Done</label>
+                </div>
+            </li>
+            <li>
+                <a href="task3.html">Configure your system 03</a>
+                <div class="button-group">
+                    <label><input type="radio" name="task3" value="revisit"> Revisit</label>
+                    <label><input type="radio" name="task3" value="done"> Done</label>
+                </div>
+            </li>
+            <li>
+                <a href="task4.html">Configure your system 04</a>
+                <div class="button-group">
+                    <label><input type="radio" name="task4" value="revisit"> Revisit</label>
+                    <label><input type="radio" name="task4" value="done"> Done</label>
+                </div>
+            </li>
+            <li>
+                <a href="task5.html">Configure your system 05</a>
+                <div class="button-group">
+                    <label><input type="radio" name="task5" value="revisit"> Revisit</label>
+                    <label><input type="radio" name="task5" value="done"> Done</label>
+                </div>
+            </li>
+            <li>
+                <a href="task6.html">Configure your system 06</a>
+                <div class="button-group">
+                    <label><input type="radio" name="task6" value="revisit"> Revisit</label>
+                    <label><input type="radio" name="task6" value="done"> Done</label>
+                </div>
+            </li>
+            <li>
+                <a href="task7.html">Configure your system 07</a>
+                <div class="button-group">
+                    <label><input type="radio" name="task7" value="revisit"> Revisit</label>
+                    <label><input type="radio" name="task7" value="done"> Done</label>
+                </div>
+            </li>
+            <li>
+                <a href="task8.html">Configure your system 08</a>
+                <div class="button-group">
+                    <label><input type="radio" name="task8" value="revisit"> Revisit</label>
+                    <label><input type="radio" name="task8" value="done"> Done</label>
+                </div>
+            </li>
+            <li>
+                <a href="task9.html">Configure your system 09</a>
+                <div class="button-group">
+                    <label><input type="radio" name="task9" value="revisit"> Revisit</label>
+                    <label><input type="radio" name="task9" value="done"> Done</label>
+                </div>
+            </li>
+            <li>
+                <a href="task10.html">Configure your system 10</a>
+                <div class="button-group">
+                    <label><input type="radio" name="task10" value="revisit"> Revisit</label>
+                    <label><input type="radio" name="task10" value="done"> Done</label>
+                </div>
+            </li>
+            <li>
+                <a href="task11.html">Configure your system 11</a>
+                <div class="button-group">
+                    <label><input type="radio" name="task11" value="revisit"> Revisit</label>
+                    <label><input type="radio" name="task11" value="done"> Done</label>
+                </div>
+            </li>
+            <li>
+                <a href="task12.html">Configure your system 12</a>
+                <div class="button-group">
+                    <label><input type="radio" name="task12" value="revisit"> Revisit</label>
+                    <label><input type="radio" name="task12" value="done"> Done</label>
+                </div>
+            </li>
+            <li>
+                <a href="task13.html">Configure your system 13</a>
+                <div class="button-group">
+                    <label><input type="radio" name="task13" value="revisit"> Revisit</label>
+                    <label><input type="radio" name="task13" value="done"> Done</label>
+                </div>
+            </li>
+            <li>
+                <a href="task14.html">Configure your system 14</a>
+                <div class="button-group">
+                    <label><input type="radio" name="task14" value="revisit"> Revisit</label>
+                    <label><input type="radio" name="task14" value="done"> Done</label>
+                </div>
+            </li>
+            <li>
+                <a href="task15.html">Configure your system 15</a>
+                <div class="button-group">
+                    <label><input type="radio" name="task15" value="revisit"> Revisit</label>
+                    <label><input type="radio" name="task15" value="done"> Done</label>
+                </div>
+            </li>
+            <li>
+                <a href="task16.html">Configure your system 16</a>
+                <div class="button-group">
+                    <label><input type="radio" name="task16" value="revisit"> Revisit</label>
+                    <label><input type="radio" name="task16" value="done"> Done</label>
+                </div>
+            </li>
+            <li>
+                <a href="task17.html">Configure your system 17</a>
+                <div class="button-group">
+                    <label><input type="radio" name="task17" value="revisit"> Revisit</label>
+                    <label><input type="radio" name="task17" value="done"> Done</label>
+                </div>
+            </li>
+            <li>
+                <a href="task18.html">Configure your system 18</a>
+                <div class="button-group">
+                    <label><input type="radio" name="task18" value="revisit"> Revisit</label>
+                    <label><input type="radio" name="task18" value="done"> Done</label>
+                </div>
+            </li>
+            <li>
+                <a href="task19.html">Configure your system 19</a>
+                <div class="button-group">
+                    <label><input type="radio" name="task19" value="revisit"> Revisit</label>
+                    <label><input type="radio" name="task19" value="done"> Done</label>
+                </div>
+            </li>
+            <li>
+                <a href="task20.html">Configure your system 20</a>
+                <div class="button-group">
+                    <label><input type="radio" name="task20" value="revisit"> Revisit</label>
+                    <label><input type="radio" name="task20" value="done"> Done</label>
+                </div>
+            </li>
+            <li>
+                <a href="task21.html">Configure your system 21</a>
+                <div class="button-group">
+                    <label><input type="radio" name="task21" value="revisit"> Revisit</label>
+                    <label><input type="radio" name="task21" value="done"> Done</label>
+                </div>
+            </li>
+            <li>
+                <a href="task22.html">Configure your system 22</a>
+                <div class="button-group">
+                    <label><input type="radio" name="task22" value="revisit"> Revisit</label>
+                    <label><input type="radio" name="task22" value="done"> Done</label>
+                </div>
+           </li>
+            <li>
+                <a href="task23.html">Configure your system 23</a>
+                <div class="button-group">
+                    <label><input type="radio" name="task23" value="revisit"> Revisit</label>
+                    <label><input type="radio" name="task23" value="done"> Done</label>
+                </div>
+            </li>
+	     <li>
+                <a href="task24.html">Configure your system 24</a>
+                <div class="button-group">
+                    <label><input type="radio" name="task24" value="revisit"> Revisit</label>
+                    <label><input type="radio" name="task24" value="done"> Done</label>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="footer">
+        RHCSA exam prepared for Students
+    </div>
+</body>
+</html>
+
