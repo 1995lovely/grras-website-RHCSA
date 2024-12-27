@@ -1,50 +1,53 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apache HTTPD Troubleshooting</title>
+    <title>YUM Repository Configuration</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f4f4f9;
+            margin: 20px;
+            background-color: #D3D3D3;
             color: #333;
         }
-        .question {
-            max-width: 800px;
+        .question-box {
+            background-color: #D3D3D3;
+
+
             padding: 20px;
-            background-color: #fff;
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
         }
         h1 {
-            font-size: 1.5em;
-            color: #007BFF;
-            margin-bottom: 10px;
+            color: #007bff;
         }
-        p {
-            line-height: 1.6;
-            margin-bottom: 10px;
+        code {
+ background-color: #D3D3D3;
+            padding: 2px 4px;
+
+            font-family: "Courier New", Courier, monospace;
+    
+       }
+        .links {
+            margin-top: 10px;
         }
-        pre {
-            background-color: #f8f9fa;
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            overflow-x: auto;
+        .link {
+            display: block;
+            margin: 5px 0;
+            color: #007bff;
+            text-decoration: none;
+        }
+        .link:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
+
+        <img src='Grras Logo white 116x98px -01.png' alt="Grras Logo"></div>
+
+
     <div class="question">
-        <h1>Question: Configure and Troubleshoot Apache HTTPD Service</h1>
+	    <h2>Question 3:</h2> 
         <p>The <code>httpd</code> service on your system is configured to serve web content on a non-standard port (82). However, the system is currently unable to connect to the <code>httpd</code> service at port 82. Your task is to fix and debug the issue while ensuring the following requirements:</p>
         <ol>
             <li>The <code>httpd</code> service should serve content from the directory <code>/var/www/html</code>.</li>
